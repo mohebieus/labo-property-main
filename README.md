@@ -5,3 +5,8 @@ Auteur : Mobile Jeux (ytb)
 
 Eviter de voler sa serait cool 👏
 ©️SW Developement ®️
+Installation : 
+- Télécharger le code
+- inserez le sql dans votre base de donné.
+- glissez la resource et starter la :
+start labo-swmj ou ensure labo-swmj
