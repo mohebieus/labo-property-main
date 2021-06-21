@@ -1,4 +1,4 @@
-# labo-property-main
+# labo-property-main v.1.0
 Voici mon laboratoire en propriété et en New RageUi style, avec systeme de recolte de drogue, avec un coffre.
 
 ## Auteur : Mobile Jeux (ytb)
