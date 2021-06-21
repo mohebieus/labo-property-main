@@ -8,7 +8,7 @@ ESX.RegisterServerCallback('getrole', function(source, cb)
     end)
 end)
 RegisterNetEvent('labo:buy')
-AddEventHandler('labo:buy', function()
+AddEventHandler('labo:buy', function(price)
     local _src = source
     local xPlayer = ESX.GetPlayerFromId(_src)
 
@@ -23,8 +23,13 @@ AddEventHandler('labo:buy', function()
                     ["a"] = xPlayer.identifier, ["b"] = GetPlayerName(_src), ["c"] = "2"
                 }, function()
                 end)
+		if xPlayer.getMoney() >= price then
+		xPlayer.removeMoney(price)
                 TriggerClientEvent('message:labo', _src, "~g~Vous venez d'acheter un laboratoire")
                 TriggerClientEvent('labo:main', _src, true)
+			else
+		TriggerClientEvent('message:labo', _src, "~r~Vous n'avez pas assez d'argent pour acheter cette propriété.")				
+		end
                 
 
             end
